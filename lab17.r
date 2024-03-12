@@ -1,0 +1,14 @@
+k=airquality
+print(class(k))
+k
+nrow(k)
+ncol(k)
+dim(k)
+summary(k)
+k$Solar.R=NULL
+k
+k$Wind=NULL
+k
+l=order(airquality$Ozone)
+m=k[l,]
+m

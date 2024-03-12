@@ -1,0 +1,8 @@
+height=c(158,160,162,165,168,174,178,180,185,190)
+weight=c(50,55,60,68,70,75,78,80,85,90)
+height_cut=cut(height,breaks=c(150,160,170,190),labels=c("short","medium","tall"))
+weight_data=data.frame(height,weight,height_cut)
+print("Women data set")
+print(weight_data)
+table(height_cut)
+plot(height,weight,main = "women data set",xlab = "Height",ylab = "Weight",col="red")

@@ -1,0 +1,10 @@
+marks=sample(0:100,100,replace = TRUE)
+print(marks)
+os_marks=cut(marks,breaks=c(-1,39,49,59,79,89,100),labels=c("0-39","40-59","60-69","70-79","80-89","90-100"))
+print(os_marks)
+mark=table(os_marks)
+print(mark)
+
+n=table(marks)
+print(n)
+barplot(mark,main="Marks distrubution",xlab="MARKS",ylab="count",col="red")
